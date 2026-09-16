@@ -143,6 +143,14 @@ function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
           ></iframe>
+          <a
+            className="contact__map-link"
+            href="https://maps.app.goo.gl/PZ2GyWQqo2pLnUG48"
+            target="_blank"
+            rel="noopener"
+          >
+            View on Google Maps
+          </a>
         </motion.div>
       </div>
     </section>
