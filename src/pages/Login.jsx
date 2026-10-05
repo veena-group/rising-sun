@@ -75,7 +75,7 @@ function Login() {
   return (
     <section className="login">
       <div className="login__media">
-        <img className="login__photo" src="/images/hero.jpg" alt="" />
+        <img className="login__photo" src="/images/wing-d.jpg" alt="" />
         <div className="login__media-overlay"></div>
         <div className="login__media-content">
           <img className="login__logo-mark" src="/images/logo.png" alt="Rising Sun Society logo" />
@@ -146,14 +146,6 @@ function Login() {
                 </button>
               </div>
             </label>
-
-            <div className="login__meta">
-              <label className="login__remember">
-                <input type="checkbox" />
-                Remember me
-              </label>
-              <a href="#forgot-password">Forgot password?</a>
-            </div>
 
             <motion.button
               type="submit"

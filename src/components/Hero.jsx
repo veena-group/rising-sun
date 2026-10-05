@@ -33,7 +33,7 @@ function Hero() {
         <img
           ref={bgRef}
           className="hero__photo"
-          src="/images/hero.jpg"
+          src="/images/wing-c-front.jpg"
           alt=""
         />
       </div>

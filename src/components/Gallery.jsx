@@ -2,15 +2,13 @@ import { motion } from 'framer-motion'
 import { fadeUp, imageReveal, staggerContainer, viewport } from '../motion'
 
 const LEFT_COL = [
-  { caption: 'Building Entrance', image: '/images/building-1.jpg', tall: true },
-  { caption: 'Society Compound', image: '/images/building-2.jpg', tall: false },
-  { caption: 'Parking Area', image: '/images/building-1.jpg', tall: true },
+  { caption: 'Wing B', image: '/images/wing-b.jpg', tall: true },
+  { caption: 'Wing A', image: '/images/wing-a.jpg', tall: false },
 ]
 
 const RIGHT_COL = [
-  { caption: 'Common Areas', image: '/images/building-2.jpg', tall: false },
-  { caption: 'Juhu Church Road', image: '/images/hero.jpg', tall: true },
-  { caption: 'Society Events', image: '/images/building-2.jpg', tall: false },
+  { caption: 'Wing C', image: '/images/wing-c.jpg', tall: true },
+  { caption: 'Wing D', image: '/images/wing-d.jpg', tall: false },
 ]
 
 function GalleryItem({ item, index, prefix }) {

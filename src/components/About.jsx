@@ -186,7 +186,7 @@ function About() {
           >
             <img
               className="about__img"
-              src="/images/building-1.jpg"
+              src="/images/wing-b.jpg"
               alt="The Rising Sun Co-operative Housing Society building"
             />
           </motion.div>
