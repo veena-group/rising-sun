@@ -27,7 +27,7 @@ function Footer() {
             </div>
             <p className="footer__about">
               The Rising Sun &amp; New Rising Sun Co-operative Housing Society Ltd. (Regn. No.:
-              BOM/HSG/713 of 1964), Juhu Church Road, Santacruz (W), Mumbai.
+              BOM/HSG/713 of 1964), Juhu Tara Road, Vile Parle (W), Mumbai.
             </p>
             <MotionLink className="btn btn--accent footer__cta" to="/login" {...tapHover}>
               Member Login
@@ -55,20 +55,15 @@ function Footer() {
                   Hamid Badami: +91 76663 18747
                 </a>
               </li>
-              <li>
-                <a className="footer__link" href="tel:+919820041703">
-                  Sanjay Thapar: +91 98200 41703
-                </a>
-              </li>
             </ul>
           </div>
 
           <div className="footer__col">
             <h4 className="footer__heading">Address</h4>
             <address className="footer__address">
-              11/12, Juhu Church Road, Juhu,
+              11/12, Juhu Tara Road,
               <br />
-              Santacruz (W), Mumbai - 400 049.
+              Vile Parle (W), Mumbai - 400 049.
             </address>
           </div>
         </motion.div>

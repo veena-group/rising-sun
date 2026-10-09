@@ -80,7 +80,7 @@ function Login() {
         <div className="login__media-content">
           <img className="login__logo-mark" src="/images/logo.png" alt="Rising Sun Society logo" />
           <p className="login__media-title">Rising Sun Co-operative Housing Society</p>
-          <p className="login__media-sub">Juhu Church Road, Santacruz (W), Mumbai 400049</p>
+          <p className="login__media-sub">Juhu Tara Road, Vile Parle (W), Mumbai 400049</p>
         </div>
       </div>
 

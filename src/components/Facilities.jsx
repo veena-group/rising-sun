@@ -52,7 +52,7 @@ const FACILITIES = [
   { title: "Children's Play Ground", icon: PlaygroundIcon },
   { title: '24 Hrs Running Water', icon: WaterIcon },
   { title: 'Ample Car Parking Space', icon: ParkingIcon },
-  { title: 'Adjoining Play School — Tic-Tac-Toe', icon: SchoolIcon },
+  { title: 'Adjoining Dilkhush School', icon: SchoolIcon },
 ]
 
 function Facilities() {

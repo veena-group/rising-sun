@@ -77,7 +77,7 @@ const HIGHLIGHTS = [
   {
     value: 'Juhu',
     label: 'Location',
-    note: '11/12, Juhu Church Road, Santacruz (W), Mumbai 400049',
+    note: '11/12, Juhu Tara Road, Vile Parle (W), Mumbai 400049',
   },
 ]
 
@@ -131,13 +131,13 @@ function About() {
               About the society
             </motion.p>
             <motion.h2 className="section-title" variants={fadeInLeft}>
-              A Prestigious Address on Juhu Church Road Since 1964
+              A Prestigious Address on Juhu Tara Road Since 1964
             </motion.h2>
             <motion.p className="about__para" variants={fadeInLeft}>
               The Rising Sun Co-operative Housing Society Ltd. (Regn. BOM/HSG/713, dt.
               11/08/1964) and New Rising Sun Co-operative Housing Society Ltd. (Regn.
-              BOM/HSG/H/6628, dt. 05/03/1981) stand at 11/12, Juhu Church Road, Juhu,
-              Santacruz West, Mumbai — one of the city's most sought-after residential
+              BOM/HSG/H/6628, dt. 05/03/1981) stand at 11/12, Juhu Tara Road,
+              Vile Parle West, Mumbai — one of the city's most sought-after residential
               addresses.
             </motion.p>
             <motion.p className="about__para" variants={fadeInLeft}>
@@ -150,7 +150,7 @@ function About() {
             <motion.p className="about__para" variants={fadeInLeft}>
               It is a cosmopolitan society with affluent middle &amp; upper class people.
               There are 2 generations of people staying, with children now from the 2nd
-              generation. Each building is managed by its own elected
+              generation. Each society is managed by its own elected
               committee, ensuring smooth day-to-day operations and well-maintained common
               areas for all residents.
             </motion.p>

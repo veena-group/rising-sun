@@ -45,7 +45,7 @@ function Hero() {
         animate="visible"
       >
         <motion.p className="hero__eyebrow" variants={fadeUp}>
-          Juhu, Santacruz West, Mumbai
+          Juhu, Vile Parle West, Mumbai
         </motion.p>
         <motion.h1 className="hero__title" variants={wordReveal} initial="hidden" animate="visible">
           {TITLE_WORDS.map((word, i) => (
@@ -64,7 +64,7 @@ function Hero() {
         </motion.p>
         <motion.p className="hero__text" variants={fadeUp}>
           The Rising Sun &amp; New Rising Sun Co-operative Housing Societies have been home to
-          generations of families at Juhu Church Road, Santacruz West. A distinguished address,
+          generations of families at Juhu Tara Road, Vile Parle West. A distinguished address,
           a well-managed community, and neighbours who look out for one another.
         </motion.p>
         <motion.div className="hero__actions" variants={fadeUp}>

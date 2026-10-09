@@ -47,18 +47,6 @@ function Contact() {
             </span>
           </motion.a>
 
-          <motion.a className="contact__card" href="tel:+919820041703" variants={fadeUp}>
-            <span className="contact__icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </span>
-            <span className="contact__card-body">
-              <span className="contact__card-label">Sanjay Thapar</span>
-              <span className="contact__card-value">+91 98200 41703</span>
-            </span>
-          </motion.a>
-
           <motion.div className="contact__card contact__card--static" variants={fadeUp}>
             <span className="contact__icon">
               <svg viewBox="0 0 24 24">
@@ -69,9 +57,9 @@ function Contact() {
             <span className="contact__card-body">
               <span className="contact__card-label">Address</span>
               <span className="contact__card-value">
-                11/12, Juhu Church Road, Juhu,
+                11/12, Juhu Tara Road,
                 <br />
-                Santacruz (W), Mumbai - 400 049.
+                Vile Parle (W), Mumbai - 400 049.
               </span>
             </span>
           </motion.div>
