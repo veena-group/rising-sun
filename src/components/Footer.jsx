@@ -51,10 +51,7 @@ function Footer() {
             <h4 className="footer__heading">Contact</h4>
             <ul className="footer__list">
               <li>
-                <a className="footer__link footer__link--contact" href="tel:+917666318747">
-                  <span className="footer__contact-name">Hamid Badami</span>
-                  <span>+91 76663 18747</span>
-                </a>
+                <span className="footer__link footer__link--static footer__contact-name">Hamid Badami</span>
               </li>
               <li>
                 <span className="footer__link footer__link--static footer__contact-name">Sanjay Thapar</span>

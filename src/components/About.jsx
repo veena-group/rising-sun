@@ -29,37 +29,31 @@ const COMMITTEE = [
     name: 'Atul Daga',
     role: 'Chairman',
     building: 'Rising Sun A & B',
-    photo: null,
   },
   {
     name: 'Purshotam Walia',
     role: 'Secretary',
     building: 'Rising Sun A & B',
-    photo: null,
   },
   {
     name: 'Rohit Patel',
     role: 'Treasurer',
     building: 'Rising Sun A & B',
-    photo: null,
   },
   {
     name: 'Deeksha Hora',
     role: 'Chairman',
     building: 'New Rising Sun C & D',
-    photo: '/images/deeksha.jpg',
   },
   {
     name: 'Niranjan Tirodkar',
     role: 'Secretary',
     building: 'New Rising Sun C & D',
-    photo: '/images/niranjan.jfif',
   },
   {
     name: 'Hamid Badami',
     role: 'Treasurer',
     building: 'New Rising Sun C & D',
-    photo: '/images/hamid.jpg',
   },
 ]
 
@@ -85,15 +79,6 @@ function TickIcon() {
   return (
     <svg className="about__tick" viewBox="0 0 24 24">
       <path d="M20 6L9 17l-5-5" />
-    </svg>
-  )
-}
-
-function PersonIcon() {
-  return (
-    <svg className="about__member-placeholder" viewBox="0 0 24 24">
-      <circle cx="12" cy="8" r="4" />
-      <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
     </svg>
   )
 }
@@ -221,13 +206,6 @@ function About() {
           <div className="about__committee-grid">
             {COMMITTEE.map((member) => (
               <motion.div className="about__member" key={`${member.building}-${member.name}`} variants={fadeUp}>
-                <span className="about__member-photo">
-                  {member.photo ? (
-                    <img src={member.photo} alt={member.name} />
-                  ) : (
-                    <PersonIcon />
-                  )}
-                </span>
                 <span className="about__member-name">{member.name}</span>
                 <span className="about__member-role">{member.role}</span>
                 <span className="about__member-building">{member.building}</span>
