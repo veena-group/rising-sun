@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { fadeUp, staggerContainer, tapHover } from '../motion'
@@ -46,6 +46,21 @@ function Login() {
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState(null)
 
+  // 'EMAIL' | 'MOBILE' | null (not loaded yet, or the lookup failed). The server decides which one this
+  // society signs in with, so changing it later needs no redeploy of this site.
+  const [loginType, setLoginType] = useState(null)
+
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_DASHBOARD_API_URL}/api/auth/login-config`)
+      .then((res) => res.json())
+      .then((body) => setLoginType(body?.data?.loginType ?? null))
+      .catch(() => setLoginType(null))
+  }, [])
+
+  const isMobile = loginType === 'MOBILE'
+  const identifierLabel = isMobile ? 'Mobile number' : loginType === 'EMAIL' ? 'Email' : 'Email or mobile number'
+  const identifierPlaceholder = isMobile ? '9876543210' : loginType === 'EMAIL' ? 'you@example.com' : 'Email or mobile number'
+
   async function handleSubmit(event) {
     event.preventDefault()
     setSubmitting(true)
@@ -55,13 +70,13 @@ function Login() {
       const res = await fetch(`${import.meta.env.VITE_DASHBOARD_API_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ identifier: email.trim(), password }),
       })
 
       const body = await res.json()
 
       if (!res.ok || !body.success) {
-        throw new Error(body.message || 'Invalid username or password')
+        throw new Error(body.message || 'Invalid credentials')
       }
 
       const encoded = encodeURIComponent(btoa(unescape(encodeURIComponent(JSON.stringify(body.data)))))
@@ -110,13 +125,15 @@ function Login() {
           <motion.form className="login__form" variants={fadeUp} onSubmit={handleSubmit}>
             <label className="contact__field">
               <span className="contact__label">
-                Email <em>*</em>
+                {identifierLabel} <em>*</em>
               </span>
               <div className="login__input">
                 <UserIcon />
                 <input
-                  type="email"
-                  placeholder="you@example.com"
+                  type={loginType === 'EMAIL' ? 'email' : isMobile ? 'tel' : 'text'}
+                  inputMode={isMobile ? 'numeric' : undefined}
+                  autoComplete="username"
+                  placeholder={identifierPlaceholder}
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
                   required
